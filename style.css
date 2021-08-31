@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Varela&display=swap');
 
+*{
+  box-sizing: border-box;
+}
 body {
   /* padding: 0 2%; */
   margin: 0;
@@ -30,7 +33,7 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #11ffee00;
   position: sticky;
   top: 0;
 }
