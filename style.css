@@ -36,6 +36,7 @@ nav {
   background-color: #11ffee00;
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 nav .profile {
   display: flex;
@@ -70,17 +71,15 @@ nav ul li:hover {
   /* margin: 4%; */
 }
 .page-content header {
-  margin-top: 5%;
-  /* max-width: 80%; */
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(images/computer.jpg);
-  /* height: 200px;
+  background-image: url(images/computer.jpg);
   width: 100%;
-  padding: 10px; */
-  height: 226px;
+  height: 500px;
   margin: 0;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  position: relative;
+  z-index: 1;
 }
 .page-content header h1 {
   margin: 0;
@@ -92,9 +91,15 @@ nav ul li:hover {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   /* font-size: 32px; */
   font-weight: bold;
+  position: relative;
+  z-index: 2;
+  /* width: 80%;
+  left: 60px; */
+  bottom: 2em;
 }
 .page-content .my-presentation {
   padding: 2%;
+  background-color: white;
 }
 .page-content .my-presentation p {
   line-height: 30px;
@@ -103,6 +108,7 @@ nav ul li:hover {
 
 .page-content .projects-section {
 	margin-top: 6%;
+  background-color: cadetblue;
 }
 .page-content .projects-section .projects {
 	display: flex;
@@ -161,6 +167,8 @@ footer .colonne p {
   
   nav {
     justify-content: center;
+    position: sticky;
+    z-index: 3;
   }
   nav ul {
     display: none;
@@ -168,7 +176,15 @@ footer .colonne p {
 
   .page-content header {
     margin-top: 10%;
-    max-width: 100%;    
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  .page-content header h1 {
+    position: relative;
+    z-index: 2;
+    bottom: 5em;
   }
   .page-content .projects-section {
     margin-top: 15%;
